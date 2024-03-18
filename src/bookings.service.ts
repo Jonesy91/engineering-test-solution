@@ -8,6 +8,10 @@ interface BookingType {
   id: string
 }
 
+/* 
+  The Booking class provides methods to handle the API calls the bookings endpoint. 
+  Each method will call the appropriate API endpoint and print the results to the console.
+*/
 export default class Booking {
   restClient: RestClient;
   uri: string;
@@ -45,7 +49,7 @@ export default class Booking {
     }
     let result;
     try {
-      result = await this.restClient.post(`/bookings`, user);
+      result = await this.restClient.post(this.uri, user);
       console.log('Created booking ', result);
       
     } catch (err: any) {
@@ -56,7 +60,7 @@ export default class Booking {
   
   async deleteBookingById(id: string){
     try{
-      await this.restClient.delete(`/bookings/${id}`);
+      await this.restClient.delete(`${this.uri}/${id}`);
       console.log(`Booking ${id} has been deleted`);
     } catch (err: any){
       throw new Error(err.message)

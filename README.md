@@ -15,7 +15,7 @@
 The node client service is a simple node application which runs through the different endpoints on the engineer-test api and logs the outputs to the console. Please follow the instructions below to start the application.</br> 
 
 To run the application:
-1. clone the reposiory `git clone`
+1. clone the reposiory `git clone https://github.com/Jonesy91/engineering-test-solution.git`
 2. run `npm i` to install dependencies
 3. run `npm start` to run the application
 

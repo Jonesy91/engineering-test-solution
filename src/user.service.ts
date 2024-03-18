@@ -6,6 +6,10 @@ interface UserType {
   email: string
 }
 
+/* 
+  The User class provides methods to handle the API calls the users endpoint. 
+  Each method will call the appropriate API endpoint and print the results to the console.
+*/
 export default class User {
   
   restClient: RestClient;

@@ -5,7 +5,9 @@ jest.mock('../restClient.ts');
 
 /* 
   Below are unit tests which test whether the appropriate rest client method is called.
-  There is one test for each methion, get, post, delete.
+  There is one test for each method, get, post, delete. Each method is mocked using Jest
+  to prevent the unit tests from calling the API to test the methods without needing 
+  the API to be available.
 */
 
 

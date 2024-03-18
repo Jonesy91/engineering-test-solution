@@ -6,6 +6,10 @@ interface ParcType {
   descripion: string
 }
 
+/* 
+  The Parc class provides methods to handle the API calls the parcs endpoint. 
+  Each method will call the appropriate API endpoint and print the results to the console.
+*/
 export default class Parc {
   
   restClient: RestClient;

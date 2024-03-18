@@ -3,7 +3,11 @@ import Booking from './bookings.service.ts';
 import Parc from './parcs.service.ts';
 import User from './user.service.ts';
 
-
+/* 
+  The main function is the starting point for the application.
+  The function instiates the requried classes and runs through 
+  the various methods which make handle the API calls.
+*/
 async function main(){
   const restClient = new RestClient('http://localhost:3001/api/1');
   const user = new User(restClient);
